@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: ${PROFILE}
+  application:
+    name: ms-smartlink-sensors-${SERVICE_VERSION}
+  config:
+    import:
+      configserver:${CONFIG_SERVER_URL}
+server:
+  port: ${PORT}

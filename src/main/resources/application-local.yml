@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      profile: local
+  config:
+    import:
+     configserver:${CONFIG_SERVER_URL}
